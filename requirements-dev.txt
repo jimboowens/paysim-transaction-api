@@ -1,0 +1,10 @@
+# Development and test dependencies for the mock payment API.
+# Install from the repository root:
+#   pip install -r requirements-dev.txt
+#
+# The runtime dependencies come from requirements.txt (built in SA-08);
+# the Docker image installs only that file, never this one.
+-r requirements.txt
+
+pytest     # test runner
+httpx==0.28.1      # needed by FastAPI's TestClient
